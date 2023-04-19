@@ -42,7 +42,7 @@ public class SopaLetras {
 
             //Buscar palabra en horizontal de derecha a izquierda
             for (int i = 0; i < sopa.length; i++){
-                for (int j = sopa[i].length-1; j >=palabra.length()-1; j-- ){
+                for (int j = 0; j >=palabra.length()-1; j-- ){
                     boolean encontrado = true;
                     for (int k = 0; k < palabra.length(); k++ ){
                         if(sopa[i][j-k] != palabra.charAt(k)){
