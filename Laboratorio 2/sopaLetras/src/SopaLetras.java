@@ -2,13 +2,15 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
+
 
 public class SopaLetras {
     public static void main(String[] args) {
         try {
             // Cambia "sopa.txt" por el nombre de tu archivo de sopa de letras
             FileReader lectorArchivo;
-            File archivo = new File("/home/juan/Escritorio/sopa.txt");
+            File archivo = new File("C:\\sopa.txt");
             lectorArchivo = new FileReader(archivo);
             BufferedReader lectorBuffer = new BufferedReader(lectorArchivo);
 
@@ -22,7 +24,9 @@ public class SopaLetras {
             }
 
             // Aquí puedes cambiar "PALABRA" por la palabra que quieras buscar en la sopa de letras
-            String palabra = "ARBOL";
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Ingrese la palabra a buscar: ");
+            String palabra = sc.nextLine();
 
             // Busca la palabra en horizontal de izquierda a derecha
             for (int i = 0; i < sopa.length; i++) {
