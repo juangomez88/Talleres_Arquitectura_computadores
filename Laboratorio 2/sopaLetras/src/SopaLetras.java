@@ -3,7 +3,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 public class SopaLetras {
     public static void main(String[] args) {
@@ -24,9 +27,17 @@ public class SopaLetras {
             }
 
             // Aquí puedes cambiar "PALABRA" por la palabra que quieras buscar en la sopa de letras
+<<<<<<< Updated upstream
             Scanner sc = new Scanner(System.in);
             System.out.println("Ingrese la palabra a buscar: ");
             String palabra = sc.nextLine();
+=======
+            Scanner in = new Scanner(System.in);
+            System.out.println("Ingrese la cantidad de palbras a buscar: ");
+            int cantidad_palabras = in.nextInt();
+            System.out.println("Ingrese la palabra a buscar: ");
+            String palabra  = in.next();
+>>>>>>> Stashed changes
 
             // Busca la palabra en horizontal de izquierda a derecha
             for (int i = 0; i < sopa.length; i++) {
