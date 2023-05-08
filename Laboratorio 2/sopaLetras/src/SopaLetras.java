@@ -13,12 +13,12 @@ public class SopaLetras {
         try {
             // Cambia "sopa.txt" por el nombre de tu archivo de sopa de letras
             FileReader lectorArchivo;
-            File archivo = new File("C:\\sopa.txt");
+            File archivo = new File("/home/juan/Escritorio/sopa.txt");
             lectorArchivo = new FileReader(archivo);
             BufferedReader lectorBuffer = new BufferedReader(lectorArchivo);
 
             // Guarda la sopa de letras en una matriz
-            char[][] sopa = new char[10][10];
+            char[][] sopa = new char[100][100];
             for (int i = 0; i < sopa.length; i++) {
                 String linea = lectorBuffer.readLine();
                 for (int j = 0; j < sopa.length; j++) {
